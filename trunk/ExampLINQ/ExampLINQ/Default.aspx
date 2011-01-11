@@ -1,6 +1,6 @@
 ﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Default.aspx.cs" Inherits="ExampLINQ._Default" %>
-
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 
 <html xmlns="http://www.w3.org/1999/xhtml" >
 <head runat="server">
@@ -60,9 +60,12 @@
                         onclick="btnFilter_Click" />
                     <asp:Button ID="btnLoadData" runat="server" Text="Load Data" 
                         onclick="btnLoadData_Click" />
-                    <asp:Button ID="btnDelete" runat="server" Text="Delete" />
-                    <asp:Button ID="btnAddNews" runat="server" Text="Add New" />              
-                    <asp:Button ID="btnEditItem" runat="server" Text="Edit Item" />                 
+                    <asp:Button ID="btnDelete" runat="server" Text="Delete" 
+                        onclick="btnDelete_Click" />
+                    <asp:Button ID="btnAddNews" runat="server" Text="Add New" 
+                        onclick="btnAddNews_Click" />              
+                    <asp:Button ID="btnEditItem" runat="server" Text="Edit Item" 
+                        onclick="btnEditItem_Click" />                 
                 </td>
             </tr>
         </table>
@@ -71,14 +74,23 @@
     </div>
     <br />
     <div align =center>
-        <asp:GridView ID="gridNhanVien" runat="server"  Width="80%" BackColor="White" 
+        <asp:GridView ID="gridNhanVien" runat="server"  Width="80%" selectedindex="1"
+             BackColor="White" 
             BorderColor="#CCCCCC" BorderStyle="None" BorderWidth="1px" CellPadding="4" 
-            ForeColor="Black" GridLines="Horizontal">
+            ForeColor="Black" GridLines="Horizontal" 
+            onselectedindexchanged="gridNhanVien_SelectedIndexChanged" 
+            onselectedindexchanging="gridNhanVien_SelectedIndexChanging" 
+            AutoGenerateSelectButton="True">
             <FooterStyle BackColor="#CCCC99" ForeColor="Black" />
             <PagerStyle BackColor="White" ForeColor="Black" HorizontalAlign="Right" />
             <SelectedRowStyle BackColor="#CC3333" Font-Bold="True" ForeColor="White" />
             <HeaderStyle BackColor="#333333" Font-Bold="True" ForeColor="White" />
+            <selectedrowstyle backcolor="Gray"
+            forecolor="White"
+            font-bold="true"/> 
         </asp:GridView>
+        <br />
+        <asp:Label ID="Label1" runat="server" Text="Label"></asp:Label>
     </div>
     </form>
 </body>
