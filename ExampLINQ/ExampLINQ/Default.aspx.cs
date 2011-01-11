@@ -27,17 +27,17 @@ namespace ExampLINQ
         {
 
         }
-        public List<NhanVien> FilterData(string name,string account)
+        public List<NhanVien> FilterData(string name,string account,string gr)
         {
             NVDatabaseDataContext db = new NVDatabaseDataContext();
             var qry = from p in db.NhanViens
-                      where p.FullName.StartsWith(name) && p.Account.StartsWith(account)
+                      where p.FullName.StartsWith(name) && p.Account.StartsWith(account) && p.Group.CompareTo(gr)==0
                       select p;
             return qry.ToList();
         }
         protected void btnLoadData_Click(object sender, EventArgs e)
         {
-            gridNhanVien.DataSource = FilterData(txtName.Text,txtAcount.Text);
+            gridNhanVien.DataSource = FilterData(txtName.Text,txtAcount.Text,txtGroup.Text);
             gridNhanVien.DataBind();            
         }
     }

@@ -37,7 +37,7 @@ namespace ExampLINQ
     #endregion
 		
 		public NVDatabaseDataContext() : 
-				base(global::System.Configuration.ConfigurationManager.ConnectionStrings["QLNVConnectionString"].ConnectionString, mappingSource)
+				base(global::System.Configuration.ConfigurationManager.ConnectionStrings["QLNVConnectionString1"].ConnectionString, mappingSource)
 		{
 			OnCreated();
 		}

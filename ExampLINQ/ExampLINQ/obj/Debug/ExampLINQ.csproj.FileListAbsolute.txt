@@ -3,3 +3,8 @@ C:\Documents and Settings\Admin\My Documents\Visual Studio 2008\Projects\ExampLI
 C:\Documents and Settings\Admin\My Documents\Visual Studio 2008\Projects\ExampLINQ\ExampLINQ\obj\Debug\ResolveAssemblyReference.cache
 C:\Documents and Settings\Admin\My Documents\Visual Studio 2008\Projects\ExampLINQ\ExampLINQ\obj\Debug\ExampLINQ.dll
 C:\Documents and Settings\Admin\My Documents\Visual Studio 2008\Projects\ExampLINQ\ExampLINQ\obj\Debug\ExampLINQ.pdb
+C:\Documents and Settings\Admin\Desktop\baitaplinq\ExampLINQ\ExampLINQ\bin\ExampLINQ.dll
+C:\Documents and Settings\Admin\Desktop\baitaplinq\ExampLINQ\ExampLINQ\bin\ExampLINQ.pdb
+C:\Documents and Settings\Admin\Desktop\baitaplinq\ExampLINQ\ExampLINQ\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\Admin\Desktop\baitaplinq\ExampLINQ\ExampLINQ\obj\Debug\ExampLINQ.dll
+C:\Documents and Settings\Admin\Desktop\baitaplinq\ExampLINQ\ExampLINQ\obj\Debug\ExampLINQ.pdb
