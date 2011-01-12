@@ -1,0 +1,11 @@
+C:\Documents and Settings\Admin\Desktop\baitaplinq\WebApplication1\QuanLyNhanVien.Web.Bus\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\Admin\Desktop\baitaplinq\WebApplication1\QuanLyNhanVien.Web.Bus\bin\Debug\QuanLyNhanVien.Web.Bus.dll
+C:\Documents and Settings\Admin\Desktop\baitaplinq\WebApplication1\QuanLyNhanVien.Web.Bus\bin\Debug\QuanLyNhanVien.Web.Bus.pdb
+C:\Documents and Settings\Admin\Desktop\baitaplinq\WebApplication1\QuanLyNhanVien.Web.Bus\bin\Debug\QuanLyNhanVien.Web.Data.dll
+C:\Documents and Settings\Admin\Desktop\baitaplinq\WebApplication1\QuanLyNhanVien.Web.Bus\bin\Debug\QuanLyNhanVien.Web.Entities.dll
+C:\Documents and Settings\Admin\Desktop\baitaplinq\WebApplication1\QuanLyNhanVien.Web.Bus\bin\Debug\QuanLyNhanVien.Web.Frameworks.dll
+C:\Documents and Settings\Admin\Desktop\baitaplinq\WebApplication1\QuanLyNhanVien.Web.Bus\bin\Debug\QuanLyNhanVien.Web.Entities.pdb
+C:\Documents and Settings\Admin\Desktop\baitaplinq\WebApplication1\QuanLyNhanVien.Web.Bus\bin\Debug\QuanLyNhanVien.Web.Data.pdb
+C:\Documents and Settings\Admin\Desktop\baitaplinq\WebApplication1\QuanLyNhanVien.Web.Bus\bin\Debug\QuanLyNhanVien.Web.Frameworks.pdb
+C:\Documents and Settings\Admin\Desktop\baitaplinq\WebApplication1\QuanLyNhanVien.Web.Bus\obj\Debug\QuanLyNhanVien.Web.Bus.dll
+C:\Documents and Settings\Admin\Desktop\baitaplinq\WebApplication1\QuanLyNhanVien.Web.Bus\obj\Debug\QuanLyNhanVien.Web.Bus.pdb
