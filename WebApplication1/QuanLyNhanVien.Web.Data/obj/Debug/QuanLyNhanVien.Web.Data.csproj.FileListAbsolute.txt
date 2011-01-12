@@ -1,0 +1,8 @@
+C:\Documents and Settings\Admin\Desktop\baitaplinq\WebApplication1\QuanLyNhanVien.Web.Data\bin\Debug\QuanLyNhanVien.Web.Data.dll.config
+C:\Documents and Settings\Admin\Desktop\baitaplinq\WebApplication1\QuanLyNhanVien.Web.Data\bin\Debug\QuanLyNhanVien.Web.Data.dll
+C:\Documents and Settings\Admin\Desktop\baitaplinq\WebApplication1\QuanLyNhanVien.Web.Data\bin\Debug\QuanLyNhanVien.Web.Data.pdb
+C:\Documents and Settings\Admin\Desktop\baitaplinq\WebApplication1\QuanLyNhanVien.Web.Data\bin\Debug\QuanLyNhanVien.Web.Frameworks.dll
+C:\Documents and Settings\Admin\Desktop\baitaplinq\WebApplication1\QuanLyNhanVien.Web.Data\bin\Debug\QuanLyNhanVien.Web.Frameworks.pdb
+C:\Documents and Settings\Admin\Desktop\baitaplinq\WebApplication1\QuanLyNhanVien.Web.Data\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\Admin\Desktop\baitaplinq\WebApplication1\QuanLyNhanVien.Web.Data\obj\Debug\QuanLyNhanVien.Web.Data.dll
+C:\Documents and Settings\Admin\Desktop\baitaplinq\WebApplication1\QuanLyNhanVien.Web.Data\obj\Debug\QuanLyNhanVien.Web.Data.pdb

@@ -71,6 +71,10 @@
       <Project>{3CC9E052-11F0-45C5-8EEA-91551D6AE58D}</Project>
       <Name>QuanLyNhanVien.Web.Bus</Name>
     </ProjectReference>
+    <ProjectReference Include="..\QuanLyNhanVien.Web.Data\QuanLyNhanVien.Web.Data.csproj">
+      <Project>{2771ECC5-3329-41DB-8FE8-D2202A7813C6}</Project>
+      <Name>QuanLyNhanVien.Web.Data</Name>
+    </ProjectReference>
     <ProjectReference Include="..\QuanLyNhanVien.Web.Entities\QuanLyNhanVien.Web.Entities.csproj">
       <Project>{E61E9C33-BDAF-402C-8A43-C1803B5107AD}</Project>
       <Name>QuanLyNhanVien.Web.Entities</Name>

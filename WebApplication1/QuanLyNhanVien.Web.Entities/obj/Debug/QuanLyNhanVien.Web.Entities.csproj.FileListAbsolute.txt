@@ -1,0 +1,5 @@
+C:\Documents and Settings\Admin\Desktop\baitaplinq\WebApplication1\QuanLyNhanVien.Web.Entities\bin\Debug\QuanLyNhanVien.Web.Entities.dll
+C:\Documents and Settings\Admin\Desktop\baitaplinq\WebApplication1\QuanLyNhanVien.Web.Entities\bin\Debug\QuanLyNhanVien.Web.Entities.pdb
+C:\Documents and Settings\Admin\Desktop\baitaplinq\WebApplication1\QuanLyNhanVien.Web.Entities\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\Admin\Desktop\baitaplinq\WebApplication1\QuanLyNhanVien.Web.Entities\obj\Debug\QuanLyNhanVien.Web.Entities.dll
+C:\Documents and Settings\Admin\Desktop\baitaplinq\WebApplication1\QuanLyNhanVien.Web.Entities\obj\Debug\QuanLyNhanVien.Web.Entities.pdb
