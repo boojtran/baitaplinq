@@ -5,7 +5,8 @@ using System.Text;
 
 namespace QuanLyNhanVien.Web.Entities
 {
-    public class Class1
+    public class NhanVien
     {
+
     }
 }

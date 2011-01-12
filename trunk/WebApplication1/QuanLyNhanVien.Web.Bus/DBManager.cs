@@ -16,5 +16,24 @@ namespace QuanLyNhanVien.Web.Bus
                       select p;
             return qry.ToList();
         }
+
+        public List<QuanLyNhanVien.Web.Data.NhanVien>? filterNV(string fromdate,string todate,string gr,string acc,string name)
+        {
+            return null;
+        }
+
+        public bool? addNhanVien(string fromdate, string todate, string gr, string acc, string name)
+        {
+            return null;
+        }
+
+        public bool? updateNhanVien(string fromdate, string todate, string gr, string acc, string name)
+        {
+            return null;
+        }
+        public bool? deleteNhanVien(string fromdate, string todate, string gr, string acc, string name)
+        {
+            return null;
+        }
     }
 }

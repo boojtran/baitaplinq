@@ -23,27 +23,29 @@ namespace WebApplication1
 
         protected void btnLoadData_Click(object sender, EventArgs e)
         {
-
+            DBManager bus = new DBManager();
+            gridNhanVien.DataSource = bus.filterNV(txtFromDate.Text,txtToDate.Text,txtGroup.Text,txtAcount.Text,txtName.Text);
+            gridNhanVien.DataBind();
         }
 
         protected void btnFilter_Click(object sender, EventArgs e)
         {
-
+            DBManager bus = new DBManager();
         }
 
         protected void btnDelete_Click(object sender, EventArgs e)
         {
-
+            DBManager bus = new DBManager();
         }
 
         protected void btnAddNews_Click(object sender, EventArgs e)
         {
-
+            DBManager bus = new DBManager();
         }
 
         protected void btnEditItem_Click(object sender, EventArgs e)
         {
-
+            DBManager bus = new DBManager();
         }
 
         protected void gridNhanVien_SelectedIndexChanged(object sender, EventArgs e)
