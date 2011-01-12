@@ -1,0 +1,46 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QuanLyNhanVien.Web", "WebApplication1\QuanLyNhanVien.Web.csproj", "{8F82D3C3-A8BD-4CE3-BB97-35545028F347}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QuanLyNhanVien.Web.Data", "QuanLyNhanVien.Web.Data\QuanLyNhanVien.Web.Data.csproj", "{2771ECC5-3329-41DB-8FE8-D2202A7813C6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QuanLyNhanVien.Web.Bus", "QuanLyNhanVien.Web.Bus\QuanLyNhanVien.Web.Bus.csproj", "{3CC9E052-11F0-45C5-8EEA-91551D6AE58D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Documents", "Documents", "{DBAE9536-7B61-4338-9FBF-1E0FF12D27DB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QuanLyNhanVien.Web.Frameworks", "QuanLyNhanVien.Web.Frameworks\QuanLyNhanVien.Web.Frameworks.csproj", "{E24F3616-855C-488E-80F8-3B6A76D5CC0F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QuanLyNhanVien.Web.Entities", "QuanLyNhanVien.Web.Entities\QuanLyNhanVien.Web.Entities.csproj", "{E61E9C33-BDAF-402C-8A43-C1803B5107AD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8F82D3C3-A8BD-4CE3-BB97-35545028F347}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8F82D3C3-A8BD-4CE3-BB97-35545028F347}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8F82D3C3-A8BD-4CE3-BB97-35545028F347}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8F82D3C3-A8BD-4CE3-BB97-35545028F347}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2771ECC5-3329-41DB-8FE8-D2202A7813C6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2771ECC5-3329-41DB-8FE8-D2202A7813C6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2771ECC5-3329-41DB-8FE8-D2202A7813C6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2771ECC5-3329-41DB-8FE8-D2202A7813C6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3CC9E052-11F0-45C5-8EEA-91551D6AE58D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3CC9E052-11F0-45C5-8EEA-91551D6AE58D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3CC9E052-11F0-45C5-8EEA-91551D6AE58D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3CC9E052-11F0-45C5-8EEA-91551D6AE58D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E24F3616-855C-488E-80F8-3B6A76D5CC0F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E24F3616-855C-488E-80F8-3B6A76D5CC0F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E24F3616-855C-488E-80F8-3B6A76D5CC0F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E24F3616-855C-488E-80F8-3B6A76D5CC0F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E61E9C33-BDAF-402C-8A43-C1803B5107AD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E61E9C33-BDAF-402C-8A43-C1803B5107AD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E61E9C33-BDAF-402C-8A43-C1803B5107AD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E61E9C33-BDAF-402C-8A43-C1803B5107AD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
