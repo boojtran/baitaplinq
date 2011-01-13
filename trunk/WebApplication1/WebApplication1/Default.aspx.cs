@@ -13,6 +13,8 @@ namespace WebApplication1
         protected void Page_Load(object sender, EventArgs e)
         {
             loadData();
+            txtFromDate.Text = "__/__/____";
+            txtToDate.Text = "__/__/____";
         }
 
         public void loadData(){
@@ -23,17 +25,20 @@ namespace WebApplication1
 
         protected void btnLoadData_Click(object sender, EventArgs e)
         {
+            DateTime fromDate = QuanLyNhanVien.Web.Frameworks.CommonFunctions.DateTimeHelper.formatDate(txtFromDate.Text);
+            DateTime toDate = QuanLyNhanVien.Web.Frameworks.CommonFunctions.DateTimeHelper.formatDate(txtToDate.Text);
+            Label1.Text = fromDate.ToString();
             DBManager bus = new DBManager();
-            gridNhanVien.DataSource = bus.filterNV(txtFromDate.Text,txtToDate.Text,txtGroup.Text,txtAcount.Text,txtName.Text);
+            gridNhanVien.DataSource = bus.filterNV(fromDate, toDate, txtGroup.Text, txtAcount.Text, txtName.Text);
             gridNhanVien.DataBind();
         }
 
         protected void btnFilter_Click(object sender, EventArgs e)
         {
             txtName.Text = "";
-            txtFromDate.Text = "";
+            txtFromDate.Text = "__/__/____";
+            txtToDate.Text = "__/__/____";
             txtGroup.Text = "";
-            txtToDate.Text = "";
             txtAcount.Text = "";
         }
 
