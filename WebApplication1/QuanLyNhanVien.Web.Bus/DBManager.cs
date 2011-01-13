@@ -17,23 +17,69 @@ namespace QuanLyNhanVien.Web.Bus
             return qry.ToList();
         }
 
-        public List<QuanLyNhanVien.Web.Data.NhanVien>? filterNV(string fromdate,string todate,string gr,string acc,string name)
+        public List<QuanLyNhanVien.Web.Data.NhanVien> filterNV(string fromdate,string todate,string gr,string acc,string name)
         {
-            return null;
+            NVDatabaseDataContext db = new NVDatabaseDataContext();
+            var qry = from p in db.NhanViens
+                      where p.FullName.StartsWith(name) 
+                            && p.Group.CompareTo(gr)==0
+                            && p.Account.StartsWith(acc)
+                      select p;
+            return qry.ToList();
         }
 
-        public bool? addNhanVien(string fromdate, string todate, string gr, string acc, string name)
+        public NhanVien getNhanVienByID(int idNhanvien)
         {
-            return null;
+            NVDatabaseDataContext db = new NVDatabaseDataContext();
+            var mem = db.NhanViens.First(m => m.ID == idNhanvien);
+            return mem;
         }
 
-        public bool? updateNhanVien(string fromdate, string todate, string gr, string acc, string name)
+        public bool addNhanVien(string startDate, string birthDate, string gr, string acc, string name)
         {
-            return null;
+            try
+            {
+                NVDatabaseDataContext db = new NVDatabaseDataContext();
+                NhanVien nv = new NhanVien
+                {
+                    startDate = Convert.ToDateTime(startDate),
+                    BirthDate = birthDate,
+                    FullName = name,
+                    Group = gr,
+                    Account = acc
+                };
+                db.NhanViens.InsertOnSubmit(nv);
+                db.SubmitChanges();
+                return true;
+            }
+            catch (Exception e) { return false; }
         }
-        public bool? deleteNhanVien(string fromdate, string todate, string gr, string acc, string name)
+
+        public bool updateNhanVien(NhanVien nv)
         {
-            return null;
+            try
+            {
+                NVDatabaseDataContext db = new NVDatabaseDataContext();
+                db.NhanViens.Attach(nv, true);
+                db.SubmitChanges();
+                return true;
+            }
+            catch (Exception e) { return false; }
+        }
+        public bool deleteNhanVien(int id)
+        {
+            try
+            {
+                NVDatabaseDataContext db = new NVDatabaseDataContext();
+                var qry = from p in db.NhanViens
+                         where p.ID == id
+                         select p;
+                db.NhanViens.DeleteAllOnSubmit(qry);
+                db.SubmitChanges();
+                return true;
+            }
+            catch (Exception e) { return false; }
+            
         }
     }
 }
