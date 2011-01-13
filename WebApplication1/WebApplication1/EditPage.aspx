@@ -11,6 +11,11 @@
             width: 119px;
         }
     </style>
+    <script>
+        function Exit() {
+            window.close();
+        }
+    </script>
 </head>
 <body>
     <form id="form1" runat="server">
@@ -54,7 +59,8 @@
         <tr align=center>
             <td colspan="2">
                 <asp:Button ID="btnSave" runat="server" Text="Save" onclick="btnSave_Click" />
-                <asp:Button ID="btnCancel" runat="server" Text="Cancel" />
+                <asp:Button ID="btnCancel" runat="server" Text="Cancel" 
+                    onclick="btnCancel_Click" OnClientClick="Exit()" />
             </td>
         </tr>
         <tr align=center>

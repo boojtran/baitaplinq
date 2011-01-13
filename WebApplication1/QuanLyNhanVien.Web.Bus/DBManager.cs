@@ -17,13 +17,15 @@ namespace QuanLyNhanVien.Web.Bus
             return qry.ToList();
         }
 
-        public List<QuanLyNhanVien.Web.Data.NhanVien> filterNV(string fromdate,string todate,string gr,string acc,string name)
+        public List<QuanLyNhanVien.Web.Data.NhanVien> filterNV(DateTime fromdate,DateTime todate,string gr,string acc,string name)
         {
             NVDatabaseDataContext db = new NVDatabaseDataContext();
             var qry = from p in db.NhanViens
                       where p.FullName.StartsWith(name) 
                             && p.Group.CompareTo(gr)==0
-                            && p.Account.StartsWith(acc)
+                            && p.Account.Contains(acc)
+                            && p.startDate >= fromdate
+                            && p.startDate <= todate
                       select p;
             return qry.ToList();
         }
