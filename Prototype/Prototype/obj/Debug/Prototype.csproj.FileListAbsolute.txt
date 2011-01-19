@@ -1,0 +1,5 @@
+C:\Documents and Settings\Admin\Desktop\baitaplinq\Prototype\Prototype\bin\Prototype.dll
+C:\Documents and Settings\Admin\Desktop\baitaplinq\Prototype\Prototype\bin\Prototype.pdb
+C:\Documents and Settings\Admin\Desktop\baitaplinq\Prototype\Prototype\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\Admin\Desktop\baitaplinq\Prototype\Prototype\obj\Debug\Prototype.dll
+C:\Documents and Settings\Admin\Desktop\baitaplinq\Prototype\Prototype\obj\Debug\Prototype.pdb
