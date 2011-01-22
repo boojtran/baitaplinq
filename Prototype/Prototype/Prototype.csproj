@@ -53,6 +53,8 @@
     <Reference Include="System.Web.Mobile" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="css\common.css" />
+    <Content Include="css\tableComment.css" />
     <Content Include="Default.aspx" />
     <Content Include="dhtmlx\dhtmlxLayout\codebase\dhtmlxcommon.js" />
     <Content Include="dhtmlx\dhtmlxLayout\codebase\dhtmlxcontainer.js" />
@@ -1257,6 +1259,7 @@
     <Content Include="dhtmlx\dhtmlxWindows\sources\dhtmlxcommon.js" />
     <Content Include="dhtmlx\dhtmlxWindows\sources\dhtmlxcontainer.js" />
     <Content Include="dhtmlx\dhtmlxWindows\sources\dhtmlxwindows.js" />
+    <Content Include="images\attachment.png" />
     <Content Include="images\button_submit.gif" />
     <Content Include="images\button_submit_blueOnWhite.gif" />
     <Content Include="images\exit.gif" />
