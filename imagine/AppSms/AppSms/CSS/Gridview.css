@@ -1,0 +1,33 @@
+﻿
+.mGrid { width: 100%;
+        background-color: #fafafa;
+        border: 1px #999999 solid;
+        border-collapse: collapse;
+        border-spacing: 0px; }
+    .mGrid td { border-bottom: 1px #6699CC dotted;
+                text-align: center;
+                font-family: Verdana, sans-serif, Arial;
+                font-weight: normal;
+                font-size: 11px;
+                color: #404040;
+                background-color: #fafafa;
+                padding-top: 4px;
+                padding-bottom: 4px;
+                padding-left: 9px;
+                padding-right: 0px; }
+    .mGrid th  
+    {
+        
+                background-color: #3b5998;
+                border: 0px #000000 solid;
+                font-family: Time New Roman;
+                font-weight: bold;
+                height:20px;
+                font-size: 13px;
+                color: white; }
+.mGrid .alt { background: #fcfcfc url(grd_alt.png) repeat-x top; }
+.mGrid .pgr {background: #424242 url(grd_pgr.png) repeat-x top; }
+    .mGrid .pgr table { margin: 5px 0; }
+    .mGrid .pgr td { border-width: 0; padding: 0 6px; border-left: solid 1px #666; font-weight: bold; color: #fff; line-height: 12px; }   
+    .mGrid .pgr a { color: #666; text-decoration: none; }
+    .mGrid .pgr a:hover { color: #000; text-decoration: none; }

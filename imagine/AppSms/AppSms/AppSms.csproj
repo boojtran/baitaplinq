@@ -1,0 +1,356 @@
+﻿<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{6D0C0590-5D3B-41BA-937C-DD4CA52A7A15}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>AppSms</RootNamespace>
+    <AssemblyName>AppSms</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="MSRI_SMS_Server, Version=1.1.1.0, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Web.Extensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.Mobile" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Control\dhtmlx\dhtmlxLayout\codebase\dhtmlxcommon.js" />
+    <Content Include="Control\dhtmlx\dhtmlxLayout\codebase\dhtmlxcontainer.js" />
+    <Content Include="Control\dhtmlx\dhtmlxLayout\codebase\dhtmlxlayout.css" />
+    <Content Include="Control\dhtmlx\dhtmlxLayout\codebase\dhtmlxlayout.js" />
+    <Content Include="Control\dhtmlx\dhtmlxLayout\codebase\imgs\dhxlayout_dhx_black\dhxlayout_bg.gif" />
+    <Content Include="Control\dhtmlx\dhtmlxLayout\codebase\imgs\dhxlayout_dhx_black\dhxlayout_collapsedhor.gif" />
+    <Content Include="Control\dhtmlx\dhtmlxLayout\codebase\imgs\dhxlayout_dhx_black\dhxlayout_collapsedver.gif" />
+    <Content Include="Control\dhtmlx\dhtmlxLayout\codebase\imgs\dhxlayout_dhx_black\dhxlayout_cpanel_btn_dock.gif" />
+    <Content Include="Control\dhtmlx\dhtmlxLayout\codebase\imgs\dhxlayout_dhx_black\dhxlayout_cpanel_btn_undock.gif" />
+    <Content Include="Control\dhtmlx\dhtmlxLayout\codebase\imgs\dhxlayout_dhx_black\dhxlayout_drag_hor.gif" />
+    <Content Include="Control\dhtmlx\dhtmlxLayout\codebase\imgs\dhxlayout_dhx_black\dhxlayout_drag_ver.gif" />
+    <Content Include="Control\dhtmlx\dhtmlxLayout\codebase\imgs\dhxlayout_dhx_black\dhxlayout_hor1l.gif" />
+    <Content Include="Control\dhtmlx\dhtmlxLayout\codebase\imgs\dhxlayout_dhx_black\dhxlayout_hor1r.gif" />
+    <Content Include="Control\dhtmlx\dhtmlxLayout\codebase\imgs\dhxlayout_dhx_black\dhxlayout_hor2l.gif" />
+    <Content Include="Control\dhtmlx\dhtmlxLayout\codebase\imgs\dhxlayout_dhx_black\dhxlayout_hor2r.gif" />
+    <Content Include="Control\dhtmlx\dhtmlxLayout\codebase\imgs\dhxlayout_dhx_black\dhxlayout_progress.gif" />
+    <Content Include="Control\dhtmlx\dhtmlxLayout\codebase\imgs\dhxlayout_dhx_black\dhxlayout_progress_global.gif" />
+    <Content Include="Control\dhtmlx\dhtmlxLayout\codebase\imgs\dhxlayout_dhx_black\dhxlayout_ver1b.gif" />
+    <Content Include="Control\dhtmlx\dhtmlxLayout\codebase\imgs\dhxlayout_dhx_black\dhxlayout_ver1t.gif" />
+    <Content Include="Control\dhtmlx\dhtmlxLayout\codebase\imgs\dhxlayout_dhx_black\dhxlayout_ver2b.gif" />
+    <Content Include="Control\dhtmlx\dhtmlxLayout\codebase\imgs\dhxlayout_dhx_black\dhxlayout_ver2t.gif" />
+    <Content Include="Control\dhtmlx\dhtmlxLayout\codebase\imgs\dhxlayout_dhx_blue\dhxlayout_bg.gif" />
+    <Content Include="Control\dhtmlx\dhtmlxLayout\codebase\imgs\dhxlayout_dhx_blue\dhxlayout_collapsedhor.gif" />
+    <Content Include="Control\dhtmlx\dhtmlxLayout\codebase\imgs\dhxlayout_dhx_blue\dhxlayout_collapsedver.gif" />
+    <Content Include="Control\dhtmlx\dhtmlxLayout\codebase\imgs\dhxlayout_dhx_blue\dhxlayout_cpanel_btn_dock.gif" />
+    <Content Include="Control\dhtmlx\dhtmlxLayout\codebase\imgs\dhxlayout_dhx_blue\dhxlayout_cpanel_btn_undock.gif" />
+    <Content Include="Control\dhtmlx\dhtmlxLayout\codebase\imgs\dhxlayout_dhx_blue\dhxlayout_drag_hor.gif" />
+    <Content Include="Control\dhtmlx\dhtmlxLayout\codebase\imgs\dhxlayout_dhx_blue\dhxlayout_drag_ver.gif" />
+    <Content Include="Control\dhtmlx\dhtmlxLayout\codebase\imgs\dhxlayout_dhx_blue\dhxlayout_hor1l.gif" />
+    <Content Include="Control\dhtmlx\dhtmlxLayout\codebase\imgs\dhxlayout_dhx_blue\dhxlayout_hor1r.gif" />
+    <Content Include="Control\dhtmlx\dhtmlxLayout\codebase\imgs\dhxlayout_dhx_blue\dhxlayout_hor2l.gif" />
+    <Content Include="Control\dhtmlx\dhtmlxLayout\codebase\imgs\dhxlayout_dhx_blue\dhxlayout_hor2r.gif" />
+    <Content Include="Control\dhtmlx\dhtmlxLayout\codebase\imgs\dhxlayout_dhx_blue\dhxlayout_progress.gif" />
+    <Content Include="Control\dhtmlx\dhtmlxLayout\codebase\imgs\dhxlayout_dhx_blue\dhxlayout_progress_global.gif" />
+    <Content Include="Control\dhtmlx\dhtmlxLayout\codebase\imgs\dhxlayout_dhx_blue\dhxlayout_ver1b.gif" />
+    <Content Include="Control\dhtmlx\dhtmlxLayout\codebase\imgs\dhxlayout_dhx_blue\dhxlayout_ver1t.gif" />
+    <Content Include="Control\dhtmlx\dhtmlxLayout\codebase\imgs\dhxlayout_dhx_blue\dhxlayout_ver2b.gif" />
+    <Content Include="Control\dhtmlx\dhtmlxLayout\codebase\imgs\dhxlayout_dhx_blue\dhxlayout_ver2t.gif" />
+    <Content Include="Control\dhtmlx\dhtmlxLayout\codebase\imgs\dhxlayout_dhx_skyblue\dhxlayout_bg.gif" />
+    <Content Include="Control\dhtmlx\dhtmlxLayout\codebase\imgs\dhxlayout_dhx_skyblue\dhxlayout_bg_sb.gif" />
+    <Content Include="Control\dhtmlx\dhtmlxLayout\codebase\imgs\dhxlayout_dhx_skyblue\dhxlayout_btns.gif" />
+    <Content Include="Control\dhtmlx\dhtmlxLayout\codebase\imgs\dhxlayout_dhx_skyblue\dhxlayout_collapsedhor.gif" />
+    <Content Include="Control\dhtmlx\dhtmlxLayout\codebase\imgs\dhxlayout_dhx_skyblue\dhxlayout_collapsedver.gif" />
+    <Content Include="Control\dhtmlx\dhtmlxLayout\codebase\imgs\dhxlayout_dhx_skyblue\dhxlayout_cpanel_btn_dock.gif" />
+    <Content Include="Control\dhtmlx\dhtmlxLayout\codebase\imgs\dhxlayout_dhx_skyblue\dhxlayout_cpanel_btn_undock.gif" />
+    <Content Include="Control\dhtmlx\dhtmlxLayout\codebase\imgs\dhxlayout_dhx_skyblue\dhxlayout_drag_hor.gif" />
+    <Content Include="Control\dhtmlx\dhtmlxLayout\codebase\imgs\dhxlayout_dhx_skyblue\dhxlayout_drag_ver.gif" />
+    <Content Include="Control\dhtmlx\dhtmlxLayout\codebase\imgs\dhxlayout_dhx_skyblue\dhxlayout_progress.gif" />
+    <Content Include="Control\dhtmlx\dhtmlxLayout\codebase\imgs\dhxlayout_dhx_skyblue\dhxlayout_progress_global.gif" />
+    <Content Include="Control\dhtmlx\dhtmlxLayout\codebase\imgs\dhxlayout_dhx_web\dhxlayout_bg_sb.gif" />
+    <Content Include="Control\dhtmlx\dhtmlxLayout\codebase\imgs\dhxlayout_dhx_web\dhxlayout_btns.gif" />
+    <Content Include="Control\dhtmlx\dhtmlxLayout\codebase\imgs\dhxlayout_dhx_web\dhxlayout_drag_hor.gif" />
+    <Content Include="Control\dhtmlx\dhtmlxLayout\codebase\imgs\dhxlayout_dhx_web\dhxlayout_drag_ver.gif" />
+    <Content Include="Control\dhtmlx\dhtmlxLayout\codebase\imgs\dhxlayout_dhx_web\dhxlayout_progress.gif" />
+    <Content Include="Control\dhtmlx\dhtmlxLayout\codebase\imgs\dhxlayout_dhx_web\dhxlayout_progress_global.gif" />
+    <Content Include="Control\dhtmlx\dhtmlxLayout\codebase\patterns\dhtmlxlayout_pattern4a.js" />
+    <Content Include="Control\dhtmlx\dhtmlxLayout\codebase\patterns\dhtmlxlayout_pattern4c.js" />
+    <Content Include="Control\dhtmlx\dhtmlxLayout\codebase\patterns\dhtmlxlayout_pattern4e.js" />
+    <Content Include="Control\dhtmlx\dhtmlxLayout\codebase\patterns\dhtmlxlayout_pattern4f.js" />
+    <Content Include="Control\dhtmlx\dhtmlxLayout\codebase\patterns\dhtmlxlayout_pattern4j.js" />
+    <Content Include="Control\dhtmlx\dhtmlxLayout\codebase\patterns\dhtmlxlayout_pattern4l.js" />
+    <Content Include="Control\dhtmlx\dhtmlxLayout\codebase\patterns\dhtmlxlayout_pattern4w.js" />
+    <Content Include="Control\dhtmlx\dhtmlxLayout\codebase\patterns\dhtmlxlayout_pattern5e.js" />
+    <Content Include="Control\dhtmlx\dhtmlxLayout\codebase\patterns\dhtmlxlayout_pattern5u.js" />
+    <Content Include="Control\dhtmlx\dhtmlxLayout\codebase\patterns\dhtmlxlayout_pattern5w.js" />
+    <Content Include="Control\dhtmlx\dhtmlxLayout\codebase\patterns\dhtmlxlayout_pattern6c.js" />
+    <Content Include="Control\dhtmlx\dhtmlxLayout\codebase\skins\dhtmlxlayout_dhx_black.css" />
+    <Content Include="Control\dhtmlx\dhtmlxLayout\codebase\skins\dhtmlxlayout_dhx_blue.css" />
+    <Content Include="Control\dhtmlx\dhtmlxLayout\codebase\skins\dhtmlxlayout_dhx_skyblue.css" />
+    <Content Include="Control\dhtmlx\dhtmlxLayout\codebase\skins\dhtmlxlayout_dhx_web.css" />
+    <Content Include="Control\dhtmlx\dhtmlxLayout\readme.txt" />
+    <Content Include="Control\dhtmlx\dhtmlxLayout\sources\dhtmlxcommon.js" />
+    <Content Include="Control\dhtmlx\dhtmlxLayout\sources\dhtmlxcontainer.js" />
+    <Content Include="Control\dhtmlx\dhtmlxLayout\sources\dhtmlxlayout.js" />
+    <Content Include="Control\dhtmlx\dhtmlxLayout\sources\patterns\dhtmlxlayout_pattern4a.js" />
+    <Content Include="Control\dhtmlx\dhtmlxLayout\sources\patterns\dhtmlxlayout_pattern4c.js" />
+    <Content Include="Control\dhtmlx\dhtmlxLayout\sources\patterns\dhtmlxlayout_pattern4e.js" />
+    <Content Include="Control\dhtmlx\dhtmlxLayout\sources\patterns\dhtmlxlayout_pattern4f.js" />
+    <Content Include="Control\dhtmlx\dhtmlxLayout\sources\patterns\dhtmlxlayout_pattern4j.js" />
+    <Content Include="Control\dhtmlx\dhtmlxLayout\sources\patterns\dhtmlxlayout_pattern4l.js" />
+    <Content Include="Control\dhtmlx\dhtmlxLayout\sources\patterns\dhtmlxlayout_pattern4w.js" />
+    <Content Include="Control\dhtmlx\dhtmlxLayout\sources\patterns\dhtmlxlayout_pattern5e.js" />
+    <Content Include="Control\dhtmlx\dhtmlxLayout\sources\patterns\dhtmlxlayout_pattern5u.js" />
+    <Content Include="Control\dhtmlx\dhtmlxLayout\sources\patterns\dhtmlxlayout_pattern5w.js" />
+    <Content Include="Control\dhtmlx\dhtmlxLayout\sources\patterns\dhtmlxlayout_pattern6c.js" />
+    <Content Include="Control\dhtmlx\dhtmlxTabbar\codebase\dhtmlxcommon.js" />
+    <Content Include="Control\dhtmlx\dhtmlxTabbar\codebase\dhtmlxcontainer.js" />
+    <Content Include="Control\dhtmlx\dhtmlxTabbar\codebase\dhtmlxtabbar.css" />
+    <Content Include="Control\dhtmlx\dhtmlxTabbar\codebase\dhtmlxtabbar.js" />
+    <Content Include="Control\dhtmlx\dhtmlxTabbar\codebase\dhtmlxtabbar_start.js" />
+    <Content Include="Control\dhtmlx\dhtmlxTabbar\codebase\ext\dhtmlxtabbar_deprecated.js" />
+    <Content Include="Control\dhtmlx\dhtmlxTabbar\codebase\imgs\blank.html" />
+    <Content Include="Control\dhtmlx\dhtmlxTabbar\codebase\imgs\dark_blue\dark_blue_bottom.gif" />
+    <Content Include="Control\dhtmlx\dhtmlxTabbar\codebase\imgs\dark_blue\dark_blue_left.gif" />
+    <Content Include="Control\dhtmlx\dhtmlxTabbar\codebase\imgs\dark_blue\dark_blue_right.gif" />
+    <Content Include="Control\dhtmlx\dhtmlxTabbar\codebase\imgs\dark_blue\dark_blue_top.gif" />
+    <Content Include="Control\dhtmlx\dhtmlxTabbar\codebase\imgs\default\close.png" />
+    <Content Include="Control\dhtmlx\dhtmlxTabbar\codebase\imgs\default\default_bottom.gif" />
+    <Content Include="Control\dhtmlx\dhtmlxTabbar\codebase\imgs\default\default_left.gif" />
+    <Content Include="Control\dhtmlx\dhtmlxTabbar\codebase\imgs\default\default_right.gif" />
+    <Content Include="Control\dhtmlx\dhtmlxTabbar\codebase\imgs\default\default_scroll_left.gif" />
+    <Content Include="Control\dhtmlx\dhtmlxTabbar\codebase\imgs\default\default_scroll_right.gif" />
+    <Content Include="Control\dhtmlx\dhtmlxTabbar\codebase\imgs\default\default_top.gif" />
+    <Content Include="Control\dhtmlx\dhtmlxTabbar\codebase\imgs\dhx_black\close.png" />
+    <Content Include="Control\dhtmlx\dhtmlxTabbar\codebase\imgs\dhx_black\dhx_black_bottom.gif" />
+    <Content Include="Control\dhtmlx\dhtmlxTabbar\codebase\imgs\dhx_black\dhx_black_left.gif" />
+    <Content Include="Control\dhtmlx\dhtmlxTabbar\codebase\imgs\dhx_black\dhx_black_right.gif" />
+    <Content Include="Control\dhtmlx\dhtmlxTabbar\codebase\imgs\dhx_black\dhx_black_scroll_left.gif" />
+    <Content Include="Control\dhtmlx\dhtmlxTabbar\codebase\imgs\dhx_black\dhx_black_scroll_right.gif" />
+    <Content Include="Control\dhtmlx\dhtmlxTabbar\codebase\imgs\dhx_black\dhx_black_top.gif" />
+    <Content Include="Control\dhtmlx\dhtmlxTabbar\codebase\imgs\dhx_blue\close.png" />
+    <Content Include="Control\dhtmlx\dhtmlxTabbar\codebase\imgs\dhx_blue\dhx_blue_bottom.gif" />
+    <Content Include="Control\dhtmlx\dhtmlxTabbar\codebase\imgs\dhx_blue\dhx_blue_left.gif" />
+    <Content Include="Control\dhtmlx\dhtmlxTabbar\codebase\imgs\dhx_blue\dhx_blue_right.gif" />
+    <Content Include="Control\dhtmlx\dhtmlxTabbar\codebase\imgs\dhx_blue\dhx_blue_scroll_left.gif" />
+    <Content Include="Control\dhtmlx\dhtmlxTabbar\codebase\imgs\dhx_blue\dhx_blue_scroll_right.gif" />
+    <Content Include="Control\dhtmlx\dhtmlxTabbar\codebase\imgs\dhx_blue\dhx_blue_top.gif" />
+    <Content Include="Control\dhtmlx\dhtmlxTabbar\codebase\imgs\dhx_skyblue\bg_bottom.png" />
+    <Content Include="Control\dhtmlx\dhtmlxTabbar\codebase\imgs\dhx_skyblue\bg_left.png" />
+    <Content Include="Control\dhtmlx\dhtmlxTabbar\codebase\imgs\dhx_skyblue\bg_right.png" />
+    <Content Include="Control\dhtmlx\dhtmlxTabbar\codebase\imgs\dhx_skyblue\bg_top.png" />
+    <Content Include="Control\dhtmlx\dhtmlxTabbar\codebase\imgs\dhx_skyblue\close.png" />
+    <Content Include="Control\dhtmlx\dhtmlxTabbar\codebase\imgs\dhx_skyblue\dhxlayout_bg_sb.gif" />
+    <Content Include="Control\dhtmlx\dhtmlxTabbar\codebase\imgs\dhx_skyblue\dhx_skyblue_bottom.gif" />
+    <Content Include="Control\dhtmlx\dhtmlxTabbar\codebase\imgs\dhx_skyblue\dhx_skyblue_left.gif" />
+    <Content Include="Control\dhtmlx\dhtmlxTabbar\codebase\imgs\dhx_skyblue\dhx_skyblue_right.gif" />
+    <Content Include="Control\dhtmlx\dhtmlxTabbar\codebase\imgs\dhx_skyblue\dhx_skyblue_scroll_left.gif" />
+    <Content Include="Control\dhtmlx\dhtmlxTabbar\codebase\imgs\dhx_skyblue\dhx_skyblue_scroll_right.gif" />
+    <Content Include="Control\dhtmlx\dhtmlxTabbar\codebase\imgs\dhx_skyblue\dhx_skyblue_top.gif" />
+    <Content Include="Control\dhtmlx\dhtmlxTabbar\codebase\imgs\dhx_web\dhx_web_bottom.gif" />
+    <Content Include="Control\dhtmlx\dhtmlxTabbar\codebase\imgs\dhx_web\dhx_web_left.gif" />
+    <Content Include="Control\dhtmlx\dhtmlxTabbar\codebase\imgs\dhx_web\dhx_web_right.gif" />
+    <Content Include="Control\dhtmlx\dhtmlxTabbar\codebase\imgs\dhx_web\dhx_web_top.gif" />
+    <Content Include="Control\dhtmlx\dhtmlxTabbar\codebase\imgs\glassy_blue\glassy_blue_bottom.gif" />
+    <Content Include="Control\dhtmlx\dhtmlxTabbar\codebase\imgs\glassy_blue\glassy_blue_left.gif" />
+    <Content Include="Control\dhtmlx\dhtmlxTabbar\codebase\imgs\glassy_blue\glassy_blue_right.gif" />
+    <Content Include="Control\dhtmlx\dhtmlxTabbar\codebase\imgs\glassy_blue\glassy_blue_top.gif" />
+    <Content Include="Control\dhtmlx\dhtmlxTabbar\codebase\imgs\modern\modern_bottom.gif" />
+    <Content Include="Control\dhtmlx\dhtmlxTabbar\codebase\imgs\modern\modern_left.gif" />
+    <Content Include="Control\dhtmlx\dhtmlxTabbar\codebase\imgs\modern\modern_right.gif" />
+    <Content Include="Control\dhtmlx\dhtmlxTabbar\codebase\imgs\modern\modern_top.gif" />
+    <Content Include="Control\dhtmlx\dhtmlxTabbar\codebase\imgs\silver\silver_bottom.gif" />
+    <Content Include="Control\dhtmlx\dhtmlxTabbar\codebase\imgs\silver\silver_left.gif" />
+    <Content Include="Control\dhtmlx\dhtmlxTabbar\codebase\imgs\silver\silver_right.gif" />
+    <Content Include="Control\dhtmlx\dhtmlxTabbar\codebase\imgs\silver\silver_top.gif" />
+    <Content Include="Control\dhtmlx\dhtmlxTabbar\codebase\imgs\winbiscarf\winbiscarf_bottom.gif" />
+    <Content Include="Control\dhtmlx\dhtmlxTabbar\codebase\imgs\winbiscarf\winbiscarf_left.gif" />
+    <Content Include="Control\dhtmlx\dhtmlxTabbar\codebase\imgs\winbiscarf\winbiscarf_right.gif" />
+    <Content Include="Control\dhtmlx\dhtmlxTabbar\codebase\imgs\winbiscarf\winbiscarf_scroll_left.gif" />
+    <Content Include="Control\dhtmlx\dhtmlxTabbar\codebase\imgs\winbiscarf\winbiscarf_scroll_right.gif" />
+    <Content Include="Control\dhtmlx\dhtmlxTabbar\codebase\imgs\winbiscarf\winbiscarf_top.gif" />
+    <Content Include="Control\dhtmlx\dhtmlxTabbar\codebase\imgs\winscarf\winscarf_bottom.gif" />
+    <Content Include="Control\dhtmlx\dhtmlxTabbar\codebase\imgs\winscarf\winscarf_left.gif" />
+    <Content Include="Control\dhtmlx\dhtmlxTabbar\codebase\imgs\winscarf\winscarf_right.gif" />
+    <Content Include="Control\dhtmlx\dhtmlxTabbar\codebase\imgs\winscarf\winscarf_scroll_left.gif" />
+    <Content Include="Control\dhtmlx\dhtmlxTabbar\codebase\imgs\winscarf\winscarf_scroll_right.gif" />
+    <Content Include="Control\dhtmlx\dhtmlxTabbar\codebase\imgs\winscarf\winscarf_top.gif" />
+    <Content Include="Control\dhtmlx\dhtmlxTabbar\readme.txt" />
+    <Content Include="Control\dhtmlx\dhtmlxTabbar\sources\dhtmlxcommon.js" />
+    <Content Include="Control\dhtmlx\dhtmlxTabbar\sources\dhtmlxcontainer.js" />
+    <Content Include="Control\dhtmlx\dhtmlxTabbar\sources\dhtmlxtabbar.js" />
+    <Content Include="Control\dhtmlx\dhtmlxTabbar\sources\dhtmlxtabbar_start.js" />
+    <Content Include="Control\dhtmlx\dhtmlxTabbar\sources\ext\dhtmlxtabbar_deprecated.js" />
+    <Content Include="Control\dhtmlx\dhtmlxWindows\codebase\dhtmlxcommon.js" />
+    <Content Include="Control\dhtmlx\dhtmlxWindows\codebase\dhtmlxcontainer.js" />
+    <Content Include="Control\dhtmlx\dhtmlxWindows\codebase\dhtmlxwindows.css" />
+    <Content Include="Control\dhtmlx\dhtmlxWindows\codebase\dhtmlxwindows.js" />
+    <Content Include="Control\dhtmlx\dhtmlxWindows\codebase\imgs\dhxwins_dhx_black\active\header_bg.gif" />
+    <Content Include="Control\dhtmlx\dhtmlxWindows\codebase\imgs\dhxwins_dhx_black\active\icon_blank.gif" />
+    <Content Include="Control\dhtmlx\dhtmlxWindows\codebase\imgs\dhxwins_dhx_black\active\icon_normal.gif" />
+    <Content Include="Control\dhtmlx\dhtmlxWindows\codebase\imgs\dhxwins_dhx_black\active\progress.gif" />
+    <Content Include="Control\dhtmlx\dhtmlxWindows\codebase\imgs\dhxwins_dhx_black\buttons.gif" />
+    <Content Include="Control\dhtmlx\dhtmlxWindows\codebase\imgs\dhxwins_dhx_black\inactive\header_bg.gif" />
+    <Content Include="Control\dhtmlx\dhtmlxWindows\codebase\imgs\dhxwins_dhx_black\inactive\icon_blank.gif" />
+    <Content Include="Control\dhtmlx\dhtmlxWindows\codebase\imgs\dhxwins_dhx_black\inactive\icon_normal.gif" />
+    <Content Include="Control\dhtmlx\dhtmlxWindows\codebase\imgs\dhxwins_dhx_black\inactive\progress.gif" />
+    <Content Include="Control\dhtmlx\dhtmlxWindows\codebase\imgs\dhxwins_dhx_blue\active\header_bg.gif" />
+    <Content Include="Control\dhtmlx\dhtmlxWindows\codebase\imgs\dhxwins_dhx_blue\active\icon_blank.gif" />
+    <Content Include="Control\dhtmlx\dhtmlxWindows\codebase\imgs\dhxwins_dhx_blue\active\icon_normal.gif" />
+    <Content Include="Control\dhtmlx\dhtmlxWindows\codebase\imgs\dhxwins_dhx_blue\active\progress.gif" />
+    <Content Include="Control\dhtmlx\dhtmlxWindows\codebase\imgs\dhxwins_dhx_blue\buttons.gif" />
+    <Content Include="Control\dhtmlx\dhtmlxWindows\codebase\imgs\dhxwins_dhx_blue\inactive\header_bg.gif" />
+    <Content Include="Control\dhtmlx\dhtmlxWindows\codebase\imgs\dhxwins_dhx_blue\inactive\icon_blank.gif" />
+    <Content Include="Control\dhtmlx\dhtmlxWindows\codebase\imgs\dhxwins_dhx_blue\inactive\icon_normal.gif" />
+    <Content Include="Control\dhtmlx\dhtmlxWindows\codebase\imgs\dhxwins_dhx_blue\inactive\progress.gif" />
+    <Content Include="Control\dhtmlx\dhtmlxWindows\codebase\imgs\dhxwins_dhx_skyblue\active\header_bg.gif" />
+    <Content Include="Control\dhtmlx\dhtmlxWindows\codebase\imgs\dhxwins_dhx_skyblue\active\icon_blank.gif" />
+    <Content Include="Control\dhtmlx\dhtmlxWindows\codebase\imgs\dhxwins_dhx_skyblue\active\icon_normal.gif" />
+    <Content Include="Control\dhtmlx\dhtmlxWindows\codebase\imgs\dhxwins_dhx_skyblue\active\progress.gif" />
+    <Content Include="Control\dhtmlx\dhtmlxWindows\codebase\imgs\dhxwins_dhx_skyblue\buttons.gif" />
+    <Content Include="Control\dhtmlx\dhtmlxWindows\codebase\imgs\dhxwins_dhx_skyblue\inactive\header_bg.gif" />
+    <Content Include="Control\dhtmlx\dhtmlxWindows\codebase\imgs\dhxwins_dhx_skyblue\inactive\icon_blank.gif" />
+    <Content Include="Control\dhtmlx\dhtmlxWindows\codebase\imgs\dhxwins_dhx_skyblue\inactive\icon_normal.gif" />
+    <Content Include="Control\dhtmlx\dhtmlxWindows\codebase\imgs\dhxwins_dhx_skyblue\inactive\progress.gif" />
+    <Content Include="Control\dhtmlx\dhtmlxWindows\codebase\imgs\dhxwins_dhx_skyblue\statusbar_bg.gif" />
+    <Content Include="Control\dhtmlx\dhtmlxWindows\codebase\imgs\dhxwins_dhx_web\active\header_bg.gif" />
+    <Content Include="Control\dhtmlx\dhtmlxWindows\codebase\imgs\dhxwins_dhx_web\active\icon_blank.gif" />
+    <Content Include="Control\dhtmlx\dhtmlxWindows\codebase\imgs\dhxwins_dhx_web\active\icon_normal.gif" />
+    <Content Include="Control\dhtmlx\dhtmlxWindows\codebase\imgs\dhxwins_dhx_web\active\progress.gif" />
+    <Content Include="Control\dhtmlx\dhtmlxWindows\codebase\imgs\dhxwins_dhx_web\buttons.gif" />
+    <Content Include="Control\dhtmlx\dhtmlxWindows\codebase\imgs\dhxwins_dhx_web\inactive\header_bg.gif" />
+    <Content Include="Control\dhtmlx\dhtmlxWindows\codebase\imgs\dhxwins_dhx_web\inactive\icon_blank.gif" />
+    <Content Include="Control\dhtmlx\dhtmlxWindows\codebase\imgs\dhxwins_dhx_web\inactive\icon_normal.gif" />
+    <Content Include="Control\dhtmlx\dhtmlxWindows\codebase\imgs\dhxwins_dhx_web\inactive\progress.gif" />
+    <Content Include="Control\dhtmlx\dhtmlxWindows\codebase\imgs\dhxwins_dhx_web\statusbar_bg.gif" />
+    <Content Include="Control\dhtmlx\dhtmlxWindows\codebase\skins\dhtmlxwindows_dhx_black.css" />
+    <Content Include="Control\dhtmlx\dhtmlxWindows\codebase\skins\dhtmlxwindows_dhx_blue.css" />
+    <Content Include="Control\dhtmlx\dhtmlxWindows\codebase\skins\dhtmlxwindows_dhx_skyblue.css" />
+    <Content Include="Control\dhtmlx\dhtmlxWindows\codebase\skins\dhtmlxwindows_dhx_web.css" />
+    <Content Include="Control\dhtmlx\dhtmlxWindows\readme.txt" />
+    <Content Include="Control\dhtmlx\dhtmlxWindows\sources\dhtmlxcommon.js" />
+    <Content Include="Control\dhtmlx\dhtmlxWindows\sources\dhtmlxcontainer.js" />
+    <Content Include="Control\dhtmlx\dhtmlxWindows\sources\dhtmlxwindows.js" />
+    <Content Include="CSS\common.css" />
+    <Content Include="CSS\Gridview.css" />
+    <Content Include="CSS\tableComment.css" />
+    <Content Include="Default.aspx" />
+    <Content Include="EditInfor.aspx" />
+    <Content Include="Images\admin.gif" />
+    <Content Include="Images\back.jpg" />
+    <Content Include="Images\cal.gif" />
+    <Content Include="Images\edit.gif" />
+    <Content Include="Images\excel.gif" />
+    <Content Include="Images\logo copy.jpg" />
+    <Content Include="Images\search.png" />
+    <Content Include="Search.aspx" />
+    <Content Include="SmsSend.aspx" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Default.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EditInfor.aspx.cs">
+      <DependentUpon>EditInfor.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EditInfor.aspx.designer.cs">
+      <DependentUpon>EditInfor.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Search.aspx.cs">
+      <DependentUpon>Search.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Search.aspx.designer.cs">
+      <DependentUpon>Search.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SmsSend.aspx.cs">
+      <DependentUpon>SmsSend.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SmsSend.aspx.designer.cs">
+      <DependentUpon>SmsSend.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\AppSmsBusiness\AppSmsBusiness.csproj">
+      <Project>{4C0CA45E-0880-4F23-B2D1-09392E83EB91}</Project>
+      <Name>AppSmsBusiness</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\AppSmsEntity\AppSmsEntity.csproj">
+      <Project>{6D5C7602-4B52-45CB-B9DF-D7A1D8D0690A}</Project>
+      <Name>AppSmsEntity</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+    <Folder Include="FileUpload\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v9.0\WebApplications\Microsoft.WebApplication.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>2815</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

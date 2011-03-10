@@ -1,0 +1,7 @@
+C:\Documents and Settings\Admin\My Documents\Visual Studio 2008\Projects\AppSms\AppSmsDataAcess\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\Admin\My Documents\Visual Studio 2008\Projects\AppSms\AppSmsDataAcess\bin\AppSmsDataAcess.dll
+C:\Documents and Settings\Admin\My Documents\Visual Studio 2008\Projects\AppSms\AppSmsDataAcess\bin\AppSmsDataAcess.pdb
+C:\Documents and Settings\Admin\My Documents\Visual Studio 2008\Projects\AppSms\AppSmsDataAcess\bin\AppSmsEntity.dll
+C:\Documents and Settings\Admin\My Documents\Visual Studio 2008\Projects\AppSms\AppSmsDataAcess\bin\AppSmsEntity.pdb
+C:\Documents and Settings\Admin\My Documents\Visual Studio 2008\Projects\AppSms\AppSmsDataAcess\obj\Debug\AppSmsDataAcess.dll
+C:\Documents and Settings\Admin\My Documents\Visual Studio 2008\Projects\AppSms\AppSmsDataAcess\obj\Debug\AppSmsDataAcess.pdb
