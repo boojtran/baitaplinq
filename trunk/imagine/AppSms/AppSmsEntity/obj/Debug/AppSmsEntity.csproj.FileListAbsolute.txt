@@ -1,0 +1,5 @@
+C:\Documents and Settings\Admin\My Documents\Visual Studio 2008\Projects\AppSms\AppSmsEntity\bin\AppSmsEntity.dll
+C:\Documents and Settings\Admin\My Documents\Visual Studio 2008\Projects\AppSms\AppSmsEntity\bin\AppSmsEntity.pdb
+C:\Documents and Settings\Admin\My Documents\Visual Studio 2008\Projects\AppSms\AppSmsEntity\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\Admin\My Documents\Visual Studio 2008\Projects\AppSms\AppSmsEntity\obj\Debug\AppSmsEntity.dll
+C:\Documents and Settings\Admin\My Documents\Visual Studio 2008\Projects\AppSms\AppSmsEntity\obj\Debug\AppSmsEntity.pdb

@@ -1,0 +1,12 @@
+C:\Documents and Settings\Admin\My Documents\Visual Studio 2008\Projects\AppSms\AppSms\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\Admin\My Documents\Visual Studio 2008\Projects\AppSms\AppSms\bin\AppSms.dll
+C:\Documents and Settings\Admin\My Documents\Visual Studio 2008\Projects\AppSms\AppSms\bin\AppSms.pdb
+C:\Documents and Settings\Admin\My Documents\Visual Studio 2008\Projects\AppSms\AppSms\obj\Debug\AppSms.dll
+C:\Documents and Settings\Admin\My Documents\Visual Studio 2008\Projects\AppSms\AppSms\obj\Debug\AppSms.pdb
+C:\Documents and Settings\Admin\My Documents\Visual Studio 2008\Projects\AppSms\AppSms\bin\AppSmsBusiness.dll
+C:\Documents and Settings\Admin\My Documents\Visual Studio 2008\Projects\AppSms\AppSms\bin\AppSmsEntity.dll
+C:\Documents and Settings\Admin\My Documents\Visual Studio 2008\Projects\AppSms\AppSms\bin\AppSmsDataAcess.dll
+C:\Documents and Settings\Admin\My Documents\Visual Studio 2008\Projects\AppSms\AppSms\bin\AppSmsDataAcess.pdb
+C:\Documents and Settings\Admin\My Documents\Visual Studio 2008\Projects\AppSms\AppSms\bin\AppSmsBusiness.pdb
+C:\Documents and Settings\Admin\My Documents\Visual Studio 2008\Projects\AppSms\AppSms\bin\AppSmsEntity.pdb
+C:\Documents and Settings\Admin\My Documents\Visual Studio 2008\Projects\AppSms\AppSms\bin\MSRI_SMS_Server.dll
